@@ -383,5 +383,67 @@ window.DATA = {
     { name:"Carnival in Brabant", area:"Den Bosch / Eindhoven · local", tier:1, cost:"Free", vibe:"Feb 2027", date:"February 2027",
       desc:"For three days the whole south goes gloriously mad: costumes, brass bands, parades and packed bars. Den Bosch becomes 'Oeteldonk' and Eindhoven 'Lampegat'. The most uniquely Brabant thing there is — worth planning ahead for.",
       placeId:"ChIJ_____zHvxkcR0NQ2zU6V6QI", q:"Oeteldonk Den Bosch carnival", web:"https://www.visitbrabant.com/en", insta:null, img:null },
+  ],
+
+  outoftown: [
+    { name:"Kasteelhoeve Geldrop", area:"Geldrop · ~10 km", tier:2, cost:"€10–20 · lunch & high tea", vibe:"Castle estate",
+      desc:"A castle farm on a storybook estate — parkland, a moat and centuries of history. Come for a long lunch or an afternoon high tea, then wander the grounds around the castle. Daytime only, but pure atmosphere.",
+      placeId:"ChIJowuw4p8nx0cRV--vsuQmhXM", q:"Kasteelhoeve Geldrop",
+      web:"http://www.kasteelhoevegeldrop.nl/", insta:null, img:null },
+
+    { name:"Het Boscafé", area:"Oisterwijk · ~25 km", tier:2, cost:"€15–25 pp", vibe:"Deep in the woods",
+      desc:"Hidden in the Oisterwijk forest and lakes — the most beautiful nature in Brabant. Walk the trails, then settle on the terrace among the trees for slow-cooked BBQ, big sandwiches and good coffee. Fresh air and zero rush.",
+      placeId:"ChIJtazDFgnqxkcRrz2yITUIr_I", q:"Het Boscafe Oisterwijk",
+      web:"https://hetboscafe.nl/", insta:null, img:null },
+
+    { name:"Brasserie Jacob V", area:"Oirschot · ~18 km", tier:3, cost:"€30–45 pp", vibe:"Dining in a church",
+      desc:"Set inside a deconsecrated church on the Kasteel Bijsterveld estate — soaring ceilings, dramatic light, serious food (and a legendary high tea). One of the most striking rooms you'll eat in around here.",
+      placeId:"ChIJ03x_Gl7DxkcR3WQVXnKGG-Y", q:"Brasserie Jacob V Oirschot",
+      web:"https://kasteelbijstervelt.nl/brasserie/", insta:null, img:null },
+
+    { name:"Bij Vrienden", area:"Helmond · ~18 km", tier:4, cost:"€45–70 pp", vibe:"Intimate fine dining",
+      desc:"A tiny, much-loved fine-dining room (rated 4.8) built around surprise menus — tell them what you don't like and let the kitchen run. Beautiful plating, warm service, real flexibility. Worth the drive for a special night.",
+      placeId:"ChIJy5-SwcQjx0cRpMFnlrZk1sg", q:"Bij Vrienden Helmond",
+      web:"http://www.bijvrienden.nl/", insta:null, img:null },
+
+    { name:"Floor's", area:"Helmond · ~18 km", tier:3, cost:"€30–45 pp", vibe:"Waterside view",
+      desc:"A cosy food-sharing spot (rated 4.9) with a genuinely stunning waterside view. Smoked ribeye, salmon and house breads, friendly staff, warm room — the kind of place you come for snacks and stay all evening.",
+      placeId:"ChIJT08Oh10jx0cRE2RVquxJ_s0", q:"Floor's Helmond",
+      web:"https://www.floorsfoodsharing.nl/", insta:null, img:null },
+
+    { name:"Kasteel Maurick", area:"Vught · ~35 km", tier:3, cost:"€35–55 pp", vibe:"Moated castle",
+      desc:"A 14th-century castle on its own moated island, wrapped in woodland near Den Bosch. Dinner under the trees on the terrace or inside the historic rooms — a little further out, but few places feel this special. Open for dinner Tue–Sat.",
+      placeId:"ChIJMYgPDtDuxkcROKw_Qe_Z8So", q:"Kasteel Maurick Vught",
+      web:"http://www.kasteel-maurick.nl/", insta:null, img:null },
+
+    { name:"Heidecafé de Strabrechtse Heide", area:"Heeze · ~15 km", tier:1, cost:"€10–18 pp", vibe:"On the heath",
+      desc:"Right on the edge of the Strabrechtse Heide — purple heath, pine and a gnome trail for the young (or young-at-heart). Big Dutch lunches, bitterballen and famous apple pie after a long walk. Daytime nature at its best.",
+      placeId:"ChIJx0zq2DYmx0cRKOyWbbh0SKA", q:"Heidecafe de Strabrechtse Heide Heeze",
+      web:"http://www.heidecafe.nl/", insta:null, img:null },
+
+    { name:"Restaurant Sabero", area:"Leende · ~18 km", tier:4, cost:"€70–110 · tasting", vibe:"Destination fine dining",
+      desc:"A tiny, cosy fine-dining room (rated 4.9) where a multi-course menu blends Dutch and Asian flavours with superb wine pairings. The kind of long, faultless evening you plan a special occasion around. Reserve well ahead.",
+      placeId:"ChIJ_SmR5UpLx0cRR14iYl2AUqI", q:"Restaurant Sabero Leende",
+      web:"https://www.sabero.nl/", insta:null, img:null },
+
+    { name:"Restaurant Bouchot", area:"Nuenen · ~12 km", tier:4, cost:"€50–80 pp", vibe:"Seafood gem",
+      desc:"A stunning little seafood-leaning restaurant (rated 4.9) in Van Gogh's Nuenen — oysters, North Sea crab, hay-smoked mussels, classic bisque, beautiful wines. Carefully-considered everything, from tableware to art. A real find.",
+      placeId:"ChIJy0jUxR8hx0cRRM_JBVpeq9s", q:"Restaurant Bouchot Nuenen",
+      web:"https://www.restaurantbouchot.com/", insta:null, img:null },
+
+    { name:"Restaurant Olijf", area:"Nuenen · ~13 km", tier:3, cost:"€38–55 · menu", vibe:"Stylish surprise menu",
+      desc:"A smart, beautifully-decorated room in Nuenen (rated 4.7) with a great-value surprise menu — four creative courses, lots of fish, attentive service. Open late into the evening Thu–Sat. A reliable pick for a proper dinner out.",
+      placeId:"ChIJmXzEKa8gx0cR0VVr9HDYT68", q:"Restaurant Olijf Nuenen",
+      web:"http://www.restaurantolijf.nl/", insta:null, img:null },
+
+    { name:"Pannenkoekenhuis Suykerbuyck", area:"Valkenswaard · ~20 km", tier:1, cost:"€10–18 pp", vibe:"Pancakes in the woods",
+      desc:"The most authentic, characterful pancake house around — endless sweet and savoury options, English menus, a warm welcome and coins for the kids to pick a gift at the end. Surrounded by forest near Valkenswaard. Pure feel-good.",
+      placeId:"ChIJr8yO6KbWxkcR61iT4sOJ37o", q:"Pannenkoekenhuis Suykerbuyck Valkenswaard",
+      web:"https://www.suykerbuyck.nl/", insta:null, img:null },
+
+    { name:"'t Brabants Genot", area:"Waalre · ~8 km", tier:2, cost:"€15–25 pp", vibe:"Countryside & farm",
+      desc:"A relaxed countryside spot just south of Eindhoven with a big garden, farm animals and play areas — easy and atmospheric for a lazy afternoon. Honest Brabant cooking, goat-cheese salads and pancakes, dog- and family-friendly.",
+      placeId:"ChIJL7GIsWnXxkcRc-HflSg1GXk", q:"'t Brabants Genot Waalre",
+      web:"https://www.brabantsgenot.nl/", insta:null, img:null },
   ]
 };

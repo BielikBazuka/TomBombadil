@@ -150,6 +150,53 @@
   .btn-copy{background:var(--gold);color:#1a1407;border-color:var(--gold)}
   .btn-clear{background:transparent;color:#caa}
 
+  .planner{padding:60px 0 10px;border-top:1px solid var(--line);margin-top:50px}
+  .planner-grid{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:start}
+  @media(max-width:760px){.planner-grid{grid-template-columns:1fr}}
+  .planner-controls{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:18px}
+  .pl-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-weight:700;margin-bottom:7px}
+  #plName{width:100%;background:#15110c;border:1px solid var(--line);border-radius:9px;color:var(--cream);padding:11px 12px;font-family:'Archivo';font-size:14px}
+  #plName:focus{outline:none;border-color:var(--gold)}
+  .pl-hint{font-size:12px;color:var(--muted);margin:11px 0 14px;line-height:1.5}
+  .pl-btns{display:flex;gap:8px;margin-bottom:9px}
+  .pl-btns button{flex:1;border-radius:9px;padding:10px;font-family:'Archivo';font-weight:700;font-size:12.5px;cursor:pointer;border:1px solid var(--line);transition:background .2s,transform .15s}
+  .pl-save{background:var(--gold);color:#1a1407;border-color:var(--gold)}
+  .pl-save:hover{transform:translateY(-1px)}
+  .pl-copy,.pl-dl{background:transparent;color:var(--cream)}
+  .pl-copy:hover,.pl-dl:hover{background:rgba(201,162,75,.12)}
+  .pl-dl{flex:1}
+  .pl-legend{display:flex;gap:16px;margin-top:14px;font-size:11px;color:#b7ab97}
+  .pl-legend span{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:13px;height:13px;border-radius:4px;display:inline-block;border:1px solid var(--line)}
+  .sw.free{background:var(--gold)}
+  .sw.all{background:#3fbf6b}
+  .planner-cal{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:18px}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .cal-head span{font-family:'Fraunces';font-weight:600;font-size:18px}
+  .cal-nav{background:transparent;border:1px solid var(--line);color:var(--cream);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:18px}
+  .cal-nav:hover{background:rgba(201,162,75,.12)}
+  .cal-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px}
+  .cal-dow span{text-align:center;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .cal-cell{aspect-ratio:1;border:1px solid var(--line);border-radius:9px;background:#15110c;cursor:pointer;position:relative;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:background .15s,border-color .15s;padding:2px}
+  .cal-cell.empty{border:0;background:transparent;cursor:default}
+  .cal-cell.past{opacity:.32;cursor:default}
+  .cal-cell .dnum{font-family:'Fraunces';font-size:15px;color:var(--cream)}
+  .cal-cell .cnt{font-size:9.5px;color:var(--muted);min-height:11px}
+  .cal-cell:hover:not(.empty):not(.past){border-color:var(--gold)}
+  .cal-cell.free{background:var(--gold);border-color:var(--gold)}
+  .cal-cell.free .dnum,.cal-cell.free .cnt{color:#1a1407}
+  .cal-cell.allfree{background:#3fbf6b;border-color:#3fbf6b}
+  .cal-cell.allfree .dnum,.cal-cell.allfree .cnt{color:#08240f}
+  .cal-cell.somefree:not(.free){box-shadow:inset 0 -4px 0 rgba(63,191,107,.55)}
+  .roster{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12.5px}
+  .chip b{font-weight:700}
+  .chip .n{color:var(--muted);font-size:11px}
+  .chip .x{cursor:pointer;color:var(--rust);font-weight:700}
+  .pl-note{margin:18px 0 4px;font-size:12px;color:var(--muted);line-height:1.6}
+  .pl-note code{background:#15110c;border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--gold-soft);font-size:11.5px}
   footer{margin-top:56px;border-top:1px solid var(--line);padding:28px 0 48px;text-align:center;color:var(--muted);font-size:12px}
   footer em{font-family:'Fraunces';font-style:italic;color:var(--gold-soft)}
   .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);z-index:80;background:var(--gold);color:#1a1407;
@@ -163,7 +210,7 @@
   <div class="wrap">
     <div class="kicker">Eindhoven · Veldhoven · & beyond</div>
     <h1>Let's Go Out<em>You Lazy Bastards</em></h1>
-    <p class="sub">Kochana Aniu, do not send us reels and bloody tiktoks. Add it here plz xD</p>
+    <p class="sub">Tables, mischief and proper day-escapes around Eindhoven. Stop scrolling the group chat — pick something, save it, and actually go.</p>
     <div class="rule"><span>Pick · Save · Go</span></div>
   </div>
 </header>
@@ -184,10 +231,48 @@
 
 <main class="wrap" id="sections"></main>
 
+<section class="wrap planner" id="planner">
+  <div class="section-head">
+    <h2>Plan a <em>night</em></h2>
+    <div class="desc">Drop your name, tap the dates you're free. Find the day everyone can make.</div>
+  </div>
+
+  <div class="planner-grid">
+    <div class="planner-controls">
+      <label class="pl-label">Your name</label>
+      <input type="text" id="plName" placeholder="e.g. Rafał" maxlength="24">
+      <div class="pl-hint" id="plHint">Tap dates below to toggle when you're free, then save.</div>
+      <div class="pl-btns">
+        <button class="pl-save" id="plSave">Save mine</button>
+        <button class="pl-copy" id="plCopy">Copy my line</button>
+      </div>
+      <div class="pl-btns">
+        <button class="pl-dl" id="plDownload">Download availability.json</button>
+      </div>
+      <div class="pl-legend">
+        <span><i class="sw free"></i> you're free</span>
+        <span><i class="sw all"></i> everyone free</span>
+      </div>
+    </div>
+    <div class="planner-cal">
+      <div class="cal-head">
+        <button class="cal-nav" id="calPrev">‹</button>
+        <span id="calTitle">—</span>
+        <button class="cal-nav" id="calNext">›</button>
+      </div>
+      <div class="cal-dow"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+  </div>
+
+  <div class="roster" id="roster"></div>
+  <p class="pl-note" id="plShareNote"></p>
+</section>
+
 <footer>
   <div class="wrap">
-    Curated for a good time around <em>Eindhoven</em>. Hours, prices &amp; festival dates change — check before you go.<br>
-    Saved picks &amp; notes live in this browser only. <em>Built with Claude.</em>
+    Made for the group chat. Check opening hours &amp; dates before you head out.<br>
+    Picks, notes &amp; availability are saved in your browser. <span id="dataNote"></span>
   </div>
 </footer>
 
@@ -209,10 +294,11 @@ const CATS=[
   {key:'restaurants',label:'Eat',title:['Tables worth','booking'],blurb:'Twenty-five spots under €100pp — from a €15 bowl of ramen to a rooftop at sunset.'},
   {key:'activities',label:'Do',title:['Things to','do together'],blurb:'Twenty experiences for groups, teams and dates. No bowling, no escape rooms.'},
   {key:'trips',label:'Day Trips',title:['Escapes for','the day'],blurb:'Full-day plans — transport, the main event and food. Biesbosch leads; bring friends.'},
+  {key:'outoftown',label:'Worth the Drive',title:['Worth the','drive'],blurb:'Twelve atmospheric spots within ~30 km — castles, forests, a church, waterside fine dining.'},
   {key:'summer',label:'This Summer',title:['Once a year','only'],blurb:'Festivals & flower parades worth planning around — most within an hour of home.'}
 ];
 // per-category base hue for gradient tiles
-const HUE={restaurants:26, activities:158, trips:212, summer:330};
+const HUE={restaurants:26, activities:158, trips:212, outoftown:42, summer:330};
 let activeCat='restaurants', sortMode='asc';
 
 const SKEY='ehv_saved_v2', NKEY='ehv_notes_v2';
@@ -261,7 +347,7 @@ function card(it,id,origIndex,n){
   const on=saved[id]?'on':'';
   const altLink = it.insta
       ? `<a class="lk alt" href="${it.insta}" target="_blank" rel="noopener">Instagram</a>`
-      : `<a class="lk alt" href="${mapUrl(it)}" target="_blank" rel="noopener">Photos</a>`;
+      : '';
   let planHtml='';
   if(it.plan){
     planHtml=`<details class="plan"${it.feat?' open':''}><summary>The full day — hour by hour</summary>
@@ -353,6 +439,102 @@ document.getElementById('sortsel').onchange=e=>{sortMode=e.target.value;render()
 
 let tT;const toastEl=document.getElementById('toast');
 function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(tT);tT=setTimeout(()=>toastEl.classList.remove('show'),1900)}
+
+/* ---------- group planner ---------- */
+const PKEY='ehv_avail_v1';
+let people=[];            // [{name, dates:[ 'YYYY-MM-DD', ... ]}]
+let myName='';
+let myDates=new Set();
+let calRef=new Date();    // month being shown
+const iso=d=>d.toISOString().slice(0,10);
+const todayISO=iso(new Date());
+
+function loadLocal(){
+  try{const o=JSON.parse(localStorage.getItem(PKEY));if(o){myName=o.name||'';myDates=new Set(o.dates||[])}}catch(e){}
+}
+function saveLocal(){try{localStorage.setItem(PKEY,JSON.stringify({name:myName,dates:[...myDates]}))}catch(e){}}
+
+function mergeMe(){
+  // ensure my entry is reflected in the people list (overrides same name)
+  const nm=(myName||'').trim();
+  people=people.filter(p=>p.name.toLowerCase()!==nm.toLowerCase());
+  if(nm)people.push({name:nm,dates:[...myDates],_me:true});
+}
+
+async function loadShared(){
+  try{
+    const res=await fetch('availability.json',{cache:'no-store'});
+    if(res.ok){const j=await res.json();if(Array.isArray(j.people))people=j.people.map(p=>({name:p.name,dates:p.dates||[]}))}
+  }catch(e){/* no file yet — fine */}
+  mergeMe();
+  renderRoster();renderCal();
+}
+
+function availCount(day){return people.filter(p=>p.dates.includes(day)).length}
+
+function renderCal(){
+  const grid=document.getElementById('calGrid');
+  const y=calRef.getFullYear(),m=calRef.getMonth();
+  document.getElementById('calTitle').textContent=calRef.toLocaleDateString('en-GB',{month:'long',year:'numeric'});
+  const first=new Date(y,m,1);
+  let startDow=(first.getDay()+6)%7; // Mon=0
+  const daysIn=new Date(y,m+1,0).getDate();
+  const total=people.length;
+  let html='';
+  for(let i=0;i<startDow;i++)html+='<div class="cal-cell empty"></div>';
+  for(let d=1;d<=daysIn;d++){
+    const ds=iso(new Date(y,m,d));
+    const past=ds<todayISO;
+    const c=availCount(ds);
+    const mine=myDates.has(ds);
+    const allf=total>0&&c===total;
+    const cls=['cal-cell'];
+    if(past)cls.push('past');
+    if(mine)cls.push('free');
+    if(allf)cls.push('allfree');
+    else if(c>0)cls.push('somefree');
+    html+=`<div class="${cls.join(' ')}" data-d="${ds}" ${past?'':'role=button'}>
+      <span class="dnum">${d}</span><span class="cnt">${c?c+'✓':''}</span></div>`;
+  }
+  grid.innerHTML=html;
+  grid.querySelectorAll('.cal-cell[data-d]:not(.past)').forEach(c=>{
+    c.onclick=()=>{
+      if(!myName.trim()){toast('Add your name first');document.getElementById('plName').focus();return}
+      const ds=c.dataset.d;
+      if(myDates.has(ds))myDates.delete(ds);else myDates.add(ds);
+      mergeMe();saveLocal();renderCal();renderRoster();
+    };
+  });
+}
+function renderRoster(){
+  const r=document.getElementById('roster');
+  if(!people.length){r.innerHTML='<span class="pl-note">No one\'s added availability yet — be the first.</span>';return}
+  r.innerHTML=people.slice().sort((a,b)=>b.dates.length-a.dates.length).map(p=>
+    `<span class="chip"><b>${p.name}</b><span class="n">${p.dates.length} day${p.dates.length===1?'':'s'}</span>${p._me?'<span class="x" data-clear="1">×</span>':''}</span>`).join('');
+  const x=r.querySelector('[data-clear]');
+  if(x)x.onclick=()=>{myDates.clear();mergeMe();saveLocal();renderCal();renderRoster()};
+}
+document.getElementById('plName').addEventListener('input',e=>{myName=e.target.value;mergeMe();saveLocal();renderCal();renderRoster()});
+document.getElementById('plSave').onclick=()=>{if(!myName.trim()){toast('Add your name first');return}mergeMe();saveLocal();toast('Saved on this device');};
+document.getElementById('calPrev').onclick=()=>{calRef=new Date(calRef.getFullYear(),calRef.getMonth()-1,1);renderCal()};
+document.getElementById('calNext').onclick=()=>{calRef=new Date(calRef.getFullYear(),calRef.getMonth()+1,1);renderCal()};
+document.getElementById('plCopy').onclick=()=>{
+  if(!myName.trim()){toast('Add your name first');return}
+  const line=JSON.stringify({name:myName.trim(),dates:[...myDates].sort()});
+  navigator.clipboard.writeText('    '+line+',').then(()=>toast('Your line copied — paste into availability.json')).catch(()=>toast('Copy failed'));
+};
+document.getElementById('plDownload').onclick=()=>{
+  mergeMe();
+  const data={updated:new Date().toISOString().slice(0,10),people:people.map(p=>({name:p.name,dates:[...p.dates].sort()}))};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='availability.json';a.click();URL.revokeObjectURL(a.href);
+  toast('Downloaded — commit it to your repo');
+};
+document.getElementById('plShareNote').innerHTML='To share with the group: tap your dates, hit <b>Download availability.json</b> (or <b>Copy my line</b>), and commit the file to the repo. Everyone\'s availability then shows up here, with the days <b>everyone</b> is free in green.';
+document.getElementById('dataNote').textContent='Share a plan by committing availability.json to the repo.';
+loadLocal();
+document.getElementById('plName').value=myName;
+loadShared();
 
 updateCount();render();
 </script>
