@@ -1,11 +1,11 @@
 {
   "updated": "2026-06-02",
   "people": [
-    { "name": "Rafał", "dates": [] }
-    { "name": "Ania", "dates": [] }
-    { "name": "Zuza", "dates": [] }
-    { "name": "Grzes", "dates": [] }
-    { "name": "Martyna", "dates": [] }
+    { "name": "Rafał", "dates": [] },
+    { "name": "Ania", "dates": [] },
+    { "name": "Zuza", "dates": [] },
+    { "name": "Grzes", "dates": [] },
+    { "name": "Martyna", "dates": [] },
     { "name": "Kuba", "dates": [] }
   ]
 }
