@@ -6,13 +6,13 @@ window.DATA = {
     { name:"Takumi Ramen", area:"Nieuwstraat · Centrum", tier:1, cost:"€15–25 pp", vibe:"Ramen",
       desc:"The best ramen in town — rich, authentic tonkotsu broth and a cosy buzz. Expect a short queue; no reservations, just go and slurp.",
       placeId:"ChIJjcN1hG3ZxkcR54oXm6RmpuQ", q:"Takumi Ramen Eindhoven Nieuwstraat",
-      web:"https://www.takumiramennoodles.com/nl/eindhoven-nieuwstraat/", insta:null,
+      web:"https://www.takumiramennoodles.com/nl/eindhoven-nieuwstraat/", insta:"https://www.instagram.com/takumiramen.nl/",
       img:null },
 
     { name:"Wasven Gasterij", area:"Tongelre", tier:1, cost:"€10–18 lunch", vibe:"Farm-to-table",
       desc:"A working bio-farm with its own veg garden and bakery, tucked between woods. Most of the plate is grown on-site. Walk it off in the forest after.",
       placeId:"ChIJu4vXyb_YxkcRBa9_GYw0GPs", q:"Wasven Gasterij Eindhoven",
-      web:"http://www.wasven.nl/", insta:"https://www.instagram.com/wasven/",
+      web:"http://www.wasven.nl/", insta:null,
       img:null },
 
     { name:"Down Town Gourmet Market", area:"Smalle Haven · Centrum", tier:2, cost:"€15–25 pp", vibe:"Food hall",
@@ -36,7 +36,7 @@ window.DATA = {
     { name:"superMARKT restobar", area:"Woenselse Markt", tier:2, cost:"€15–25 pp", vibe:"Hidden gem",
       desc:"A little gem in a chaotic neighbourhood. Small simple menu, fresh ingredients, a self-imported list of small French wines and a great sound system.",
       placeId:"ChIJU7wFBSHZxkcRysOMeNvJHK4", q:"superMARKT restobar Eindhoven",
-      web:"https://supermarkteindhoven.nl/", insta:"https://www.instagram.com/supermarkt.eindhoven/",
+      web:"https://supermarkteindhoven.nl/", insta:"https://www.instagram.com/supermarkt.restobar/",
       img:null },
 
     { name:"Otomoto", area:"Vrijstraat · Centrum", tier:2, cost:"€20–35 pp", vibe:"Listening bar",
